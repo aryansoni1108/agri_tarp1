@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:id="@+id/district_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="@dimen/textsize"
+                android:layout_marginLeft="16dp"
+                android:text="District: " />
+
+            <TextView
+                android:id="@+id/district1"
+                android:textSize="@dimen/textsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@id/district_txt"
+                tools:text="Anand" />
+
+            <TextView
+                android:id="@+id/market_txt"
+                android:textSize="@dimen/textsize"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/district_txt"
+                android:layout_margin="16dp"
+                android:text="Market: " />
+
+            <TextView
+                android:id="@+id/market1"
+                android:textSize="@dimen/textsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/district1"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+
+                android:layout_toRightOf="@id/market_txt"
+                tools:text="Khambat" />
+
+            <TextView
+                android:id="@+id/commo_txt"
+                android:textSize="@dimen/textsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/market_txt"
+                android:layout_marginLeft="@dimen/left_elements"
+                android:text="Commodity" />
+
+            <TextView
+                android:id="@+id/commo"
+                android:textSize="@dimen/textsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/market1"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@id/commo_txt"
+                tools:text="Onions" />
+
+            <TextView
+                android:id="@+id/variety_txt"
+
+                android:textSize="@dimen/textsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/commo_txt"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="@dimen/left_elements"
+                android:text="Variety" />
+
+            <TextView
+                android:id="@+id/variety1"
+                android:textSize="@dimen/textsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/commo_txt"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="70dp"
+
+                android:layout_toRightOf="@id/variety_txt"
+                tools:text="other" />
+
+            <TextView
+                android:id="@+id/arrival_txt"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/textsize"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/variety_txt"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Arrival Date:" />
+
+            <TextView
+                android:id="@+id/arrival_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/variety1"
+                android:textSize="@dimen/textsize"
+                android:layout_marginLeft="@dimen/right_elements"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@id/arrival_txt"
+                tools:text="03/03/2019" />
+
+            <TextView
+                android:id="@+id/min_price_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/arrival_txt"
+                android:textSize="@dimen/textsize"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Min Price:" />
+
+            <TextView
+                android:id="@+id/min_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize"
+                android:layout_below="@id/arrival_date"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@id/min_price_txt"
+                tools:text="100" />
+
+            <TextView
+                android:id="@+id/max_price_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize"
+                android:layout_below="@id/min_price"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Max price:" />
+
+            <TextView
+                android:id="@+id/max_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize"
+                android:layout_below="@id/min_price"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@id/max_price_txt"
+                tools:text="1000" />
+            <TextView
+                android:id="@+id/average_price_txt"
+                android:text="Averge price"
+                android:layout_below="@id/max_price_txt"
+                android:layout_marginLeft="@dimen/left_elements"
+                android:layout_marginTop="16dp"
+                android:textSize="@dimen/textsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/average_price"
+                android:layout_below="@id/max_price"
+                tools:text="1000"
+                android:layout_toRightOf="@id/average_price_txt"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/state_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/average_price_txt"
+                android:text="State"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="26dp"
+                android:textSize="@dimen/textsize"/>
+            <TextView
+                android:id="@+id/state1"
+                android:layout_below="@id/average_price"
+                android:textSize="@dimen/textsize"
+                android:layout_marginLeft="106dp"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@id/state_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
